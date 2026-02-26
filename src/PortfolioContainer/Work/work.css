@@ -1,0 +1,32 @@
+.company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ff5a1f;
+  border-radius: 50%;
+}
+
+.item-header h3 {
+  color: #ff5a1f;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.item {
+  margin-bottom: 40px;
+}
+
+.item ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.item li {
+  margin-bottom: 8px;
+  color: #555;
+}

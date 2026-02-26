@@ -1,0 +1,42 @@
+.screen-heading-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* TITLE */
+.screen-heading-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f2235;
+  margin-bottom: 6px;
+}
+
+/* SUBTITLE */
+.screen-heading-subtitle {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #666;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* LINE */
+.screen-heading-divider {
+  position: relative;
+  width: 260px;
+  height: 2px;
+  background: #000;
+  margin: 0 auto;
+}
+
+/* ORANGE BLOB */
+.screen-heading-blob {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 8px;
+  background: #ff5823;
+  border-radius: 10px;
+}

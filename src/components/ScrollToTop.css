@@ -1,0 +1,33 @@
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;   /* ✅ use bottom instead of top */
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: orange;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-btn:hover {
+  background: orange;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* 📱 Mobile optimization */
+@media (max-width: 768px) {
+  .scroll-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    bottom: 25px;
+    right: 15px;
+  }
+}

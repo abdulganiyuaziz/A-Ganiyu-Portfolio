@@ -1,0 +1,154 @@
+/* =======================
+   BUTTONS
+======================= */
+.btn {
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #1f2937; /* dark blue-ish */
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background-color: #111827;
+}
+
+.highlighted-btn {
+  background-color: #ff5823;
+  color: #fff;
+}
+
+.highlighted-btn:hover {
+  background-color: #e14e1b;
+}
+
+/* =======================
+   MAIN CONTAINER
+======================= */
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  background-color: #f8f9fa; /* subtle light background */
+}
+
+/* CARD */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1100px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.about-content img {
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-content img:hover {
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.about-text-content {
+  flex: 1;
+}
+
+.about-text-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #374151; /* grayish text */
+}
+
+/* HIGHLIGHTS */
+.about-text-content h2 {
+  font-size: 20px;
+  margin-bottom: 0.8rem;
+  color: #111827;
+}
+
+.about-text-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.about-text-content ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 0.6rem;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.about-text-content ul li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #ff5823; /* orange bullet */
+  font-size: 18px;
+}
+
+/* BUTTONS AREA */
+.profile-options {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .about-content img {
+    width: 250px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .about-container {
+    padding: 2rem 1rem;
+  }
+
+  .about-content img {
+    width: 200px;
+  }
+
+  .profile-options {
+    justify-content: center;
+  }
+}

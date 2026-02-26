@@ -1,0 +1,158 @@
+.contact-section {
+  padding: 4rem 1rem;
+  background: #ffffff;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.contact-header p {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.underline {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.underline span {
+  width: 80px;
+  height: 3px;
+  background: #000;
+  position: relative;
+}
+
+.underline span::after {
+  content: "";
+  width: 30px;
+  height: 16px;
+  background: #ff5e14;
+  position: absolute;
+  left: 50%;
+  top: -1.5px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+/* CARD */
+.contact-card {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(135deg, #1b1f36, #23284a);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* LEFT */
+.contact-left {
+  padding: 2rem;
+  color: #fff;
+}
+
+.contact-left h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+
+
+.email-text {
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.contact-bg {
+  height: 180px;
+  border-radius: 10px;
+  background: url("/assets/contact-bg.png") center/cover no-repeat;
+}
+img{
+  vertical-align: middle;
+  border-style: none;
+}
+img{
+  overflow-clip-margin: content-box;
+  overflow: cli;
+}
+
+/* RIGHT */
+.contact-right {
+  background: #efefef;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right label {
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.contact-right textarea {
+  min-height: 120px;
+  resize: none;
+}
+.contact-img {
+  width: 100%;
+  max-width: 320px;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+
+.send-btn {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.7rem 2rem;
+  background: #1b1f36;
+  color: #fff;
+  border: 2px solid #ff5e14;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+}
