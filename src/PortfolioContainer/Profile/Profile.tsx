@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaTwitch } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import "./Profile.css";
 const Profile = () => {
@@ -21,7 +21,7 @@ const Profile = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaInstagram />
+                <FaLinkedinIn />
               </a>
 
               <a
@@ -29,7 +29,7 @@ const Profile = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTwitch />
+                <FaTwitter />
               </a>
             </div>
           </div>
